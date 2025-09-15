@@ -9,16 +9,6 @@ const totalExpensesEl = document.getElementById("total-expenses");
 let balance = 0;
 let expenses = [];
 
-// window.addEventListener("load", () => {
-//     const storedBalance = localStorage.getItem("balance");
-//     const storedExpenses = localStorage.getItem("expenses");
-
-//     if (storedBalance) balance = Number(storedBalance);
-//     if (storedExpenses) expenses = JSON.parse(storedExpenses);
-
-//     updateUI();
-// });
-
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
@@ -47,7 +37,7 @@ form.addEventListener("submit", (e) => {
 
 //update UI
 function updateUI() {
-    balanceEl.textContent = ` $${balance}`;
+    balanceEl.textContent = ` ₹${balance}`;
     expenseTableBody.innerHTML = "";
 
     let totalExpenses = 0;
@@ -64,7 +54,7 @@ function updateUI() {
         `;
         expenseTableBody.appendChild(row);
     });
-    totalExpensesEl.textContent = `$${totalExpenses}`;
+    totalExpensesEl.textContent = `₹${totalExpenses}`;
 }
 
 //delete expense
@@ -77,8 +67,3 @@ function deleteExpense(id) {
     }
 }
 
-// //save data
-// function saveData() {
-//     localStorage.setItem("balance", balance);
-//     localStorage.setItem("expenses", JSON.stringify(expenses));
-// }
