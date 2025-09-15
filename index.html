@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense Tacker</title>
+</head>
+
+<body>
+    <div class="app">
+        <h1>Expense Tacker</h1>
+        <div class="balance-card">
+            <h2>Total Balance</h2>
+            <p id="balance">$0</p>
+        </div>
+        <form action="" id="expense-form">
+            <input type="text" id="desc" placeholder="Enter description" required>
+            <input type="number" id="amount" placeholder="Enter Amount" required>
+            <select id="category" required>
+                <option value="">Select category</option>
+                <option value="Food">🍔 Food</option>
+                <option value="Entertainment">&#127917; Entertainment</option>
+                <option value="Transport">🚕 Transport</option>
+                <option value="Shopping">🛍️ Shopping</option>
+                <option value="Other">🔖 Other</option>
+            </select>
+            <button type="submit">Add Expense</button>
+        </form>
+
+        <div id="history">
+            <h3>Your Expense</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="expense-table-body"> </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2" style="text-align: right;font-weight: bold;">Total Expenses</td>
+                        <td colspan="2" id="total-expenses">$0</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

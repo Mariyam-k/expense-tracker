@@ -1,0 +1,95 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(120deg,#84fa84,#8fd3f8);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.app{
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 15px;
+    width: 550px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+h1{
+    margin-bottom: 20px;
+    color: #333;
+}
+.balance-card{
+    background-color: aliceblue;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+#balance{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #28a745;
+}
+form{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+input , select , button {
+    padding: 10px ;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+button{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: #0056b3;
+}
+#history{
+    margin-top: 20p;
+    text-align: center;
+}
+table{
+    width:100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+th{
+    background-color: #007bff;
+    color: #fff;
+}
+th , td{
+    border: 1px solid #ddd;
+    padding :10px ;
+    text-align: center;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+.delete-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: red;
+    font-size: 16px;
+    transition: transform 0.2s;
+}
+.delete-btn:hover{
+    background-color: #f1f1f1;
+    font-size: 16px;
+    padding: 10px;
+}
+tfoot td{
+    background-color: #f1f1f1;
+    font-size: 16px;
+    padding: 10px;
+}
